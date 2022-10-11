@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+/*.color1 { #f2f2f2 };
+.color2 { #348e91 };
+.color3 { #1c5052 };
+.color4 { #213635 };
+.color5 { #0a0c0d };*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    font-weight: 700;
+    color: #1c5052;
+}
+
+div.container {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #1c5052;
+    width: 400px;
+    height: 570px;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: .9em;
+    gap: 10px;
+}
+
+div.border {
+    border: 2px solid #f2f2f2;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 12px;
+    
+}
+
+div.border p {
+    text-align: justify;
+}
+
+h2 {
+    font-weight: 700;
+    color: #f2f2f2;
+    letter-spacing: .2em;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 12px;
+    color: #213635;
+}
+
+form label select {
+    margin-left: 16px;
+}
+
+form label {
+    color: #f2f2f2;
+}
+
+form input {
+    width: 62%;
+    display: flex; 
+    margin: 4px 0;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    padding-left: 8px;
+}
+
+form input:focus {
+    border:1px solid #348e91;
+    outline: 1px solid #348e91;
+}
+
+form input:focus::before {
+    background-color: #f2f2f2;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #213635;
+    color: #f2f2f2;
+    border: none;
+    height: 32px;
+    border-radius: 4px;
+    letter-spacing: .2em;
+}
+
+button:disabled:hover {
+    background-color: #213635;
+}
+
+button:hover {
+    background-color: #348e91 ;
+    transition: .7s;
+}
+
+p {
+    margin-top: 15px;
+    text-align: justify;
+    color: #f2f2f2;
+    letter-spacing: .2em;
+    font-size: 14px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    appearance: none;
+}

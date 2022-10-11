@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>Carro Novo</title>
+</head>
+<body>
+    <h1>Seu Carro Novo Sem Juros!!!</h1>
+    <div class="container">
+        <div class="border">
+            <h2>Regras da Promoção!</h2>
+            <p>Valor de entrada tem que ser no minimo 30% ou até no máximo 90%.</p>
+            <p>A quantidade de parcelas deve ser de 3 a 24.</p>
+        </div>
+        <form>
+            <label id="veiculos">
+                Informe o Veículo Desejado
+               <input type="text" placeholder="Informe o carro desejado.">
+            </label>
+            <label>
+                Informe o Valor do Veículo.
+                <input  id="valor-veiculo" type="number" >
+            </label>
+            <label>
+                Informe o percentual de entrada.
+                <input min="30" max="90" id="percentual-entrada" type="number">
+            </label>
+            <label>
+                Informe a quantidade de parcelas.
+                <input min="3" max="24" id="parcelas" type="number">
+            </label>
+        </form>
+        <button disabled="disabled">Calcular</button>
+        <p id="valor-entrada"></p>
+        <p id="qtd-parcelas"></p>
+    </div>
+    
+</body>
+<script src="./index.js"></script>
+</html>
