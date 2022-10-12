@@ -20,7 +20,8 @@ inputs.forEach(function (input) {
     });
 });
 
-const veiculo = document.querySelector('#veiculos input')
+const container = document.querySelector('.container')
+const carro = document.querySelector('#veiculos input')
 const valorVeiculo = document.querySelector('#valor-veiculo')
 const percentual = document.querySelector('#percentual-entrada')
 const parcelas = document.querySelector('#parcelas')
@@ -28,7 +29,6 @@ const select = document.querySelector('select')
 const button = document.querySelector('button')
 const valorEntrada = document.querySelector('#valor-entrada')
 const qtdParcelas = document.querySelector('#qtd-parcelas')
-
 
 const calculateValue = () => {
     if(percentual.value < 30 || percentual.value > 90 || parcelas.value < 3 || parcelas.value > 24) {
@@ -39,7 +39,8 @@ const calculateValue = () => {
         let valor = valorVeiculo.value * percent
         let novoValorVeiculo = valorVeiculo.value - valor
         let valorParcela = novoValorVeiculo / parcela
-    
+
+        container.style.height = "575px"
         valorEntrada.textContent = `O valor de sua entrada é de R$${valor.toFixed(2)}.`
         qtdParcelas.textContent = `Seu ${carro.value} terá ${parcela} parcelas e o valor delas será de R$ ${valorParcela.toFixed(2)}.`
     }
